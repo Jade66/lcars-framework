@@ -1060,7 +1060,7 @@ a:active {
 
 @media (max-width: 1400px) {
 	.data-cascade {
-/*		font-size: .75rem;*/
+		font-size: .75rem;
 		line-height: 1;
 	}
 }

@@ -1,0 +1,6 @@
+The components should not be responsible for generating their children.  Create a component for each type of element we want, and compose it like normal HTML.
+
+Create a utility file for things like generating stardates, etc.
+
+Find a way to make these into modules that the browser can load, and allows importing within each module, but without having to rely on a build tool.
+

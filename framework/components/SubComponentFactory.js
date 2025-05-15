@@ -14,6 +14,13 @@ function leftFrameItem(id, text, panelStyleId, handler) {
     return child;
 }
 
+function barPanelItem(id, barStyleId) {
+    let child = document.createElement('div');
+    child.id = id;
+    child.classList.add(`bar-${barStyleId}`);
+    return child;
+}
+
 window.lcarsFramework = window.lcarsFramework || {};
 window.lcarsFramework.subComponentFactory = {
     leftFrameItem

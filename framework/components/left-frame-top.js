@@ -1,6 +1,6 @@
 
 class LeftFrameTop extends HTMLDivElement {
-    static observedAttributes = ["color", "size"];
+    static observedAttributes = ["cascade", "cascadeLines"];
     subComponentFactory = window.lcarsFramework.subComponentFactory;
   
     constructor() {
@@ -14,7 +14,7 @@ class LeftFrameTop extends HTMLDivElement {
       let child = this.subComponentFactory.leftFrameItem('lcars-button', 'LCARS', 1, () => alert('LCARS for the win!'));
       self.appendChild(child);
 
-      child = this.subComponentFactory.leftFrameItem('dummy-item-1', '02-262000', 2);
+      child = this.subComponentFactory.leftFrameItem('dummy-item-1', '21-943330', 2);
       self.appendChild(child);
 
     }
