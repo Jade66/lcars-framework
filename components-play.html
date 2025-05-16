@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Classic Starndard</title>
+		<title>LCARS Demo</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 		<meta name="format-detection" content="telephone=no">
 		<meta name="format-detection" content="date=no">
@@ -14,10 +14,14 @@
 	<body>
 		<section class="wrap-standard" id="column-3">
 			<div class="wrap">
-				<div is="left-frame-top"></div>
+				<div is="left-frame-top">
+					<div class="panel-1"><a id="lcars-button" href="">LCARS</a></div>
+					<div class="panel-2">02<span class="hop">-262000</span></div>
+					<div class="panel-2"></div>
+				</div>
 				<div is="right-frame-top" banner-text="TCV Sovereign">
 					<div class="data-cascade-button-group">
-						<div is="data-cascade" max-lines="4" number-of-lines="4"></div>
+						<div is="data-cascade" max-lines="4" number-of-lines="4" id="header-cascade"></div>
 						<nav> 
 							<a href="">01</a>
 							<a href="">02</a>
@@ -58,14 +62,14 @@
 						<div class="bar-10"></div>
 					</div>
 					<main>
-						<my-custom-element>Custom element content</my-custom-element>
-
 						<!-- Start your content here. -->
 
 						<h1>Overall Status</h1>
 						<h2>Life Support <span style="color:aquamarine">Nominal</span> &#149; 
 							Drive/Navigation <span style="color:aquamarine">Nominal</span> &#149; 
 							Shields/Weapons <span style="color:aquamarine">Nominal</span></h2>					
+							<div is="data-cascade" max-lines="8" number-of-lines="4" id="body-cascade"></div>
+
 						<h3>Section 1</h3>
 						<p>Live long and prosper.</p>
 						<h3>Section 2</h3>
@@ -77,10 +81,6 @@
 					</main>
 					<footer>
 						<div>
-							<!-- Your copyright information is only a suggestion. You can also choose to delete this DIV. -->
-							Content Copyright &#169; 2025 *replace this text with your website's name or URL.*
-						</div>
-						<div>
 							<!-- The following attribution must not be removed. -->
 							LCARS Inspired Website Template created by and copyright &#169; <a href="https://www.thelcars.com">www.TheLCARS.com</a>
 						</div>
@@ -91,5 +91,13 @@
 		<script type="text/javascript" src="framework/assets/lcars.js"></script>
 		<div class="headtrim"> </div>
 		<div class="baseboard"> </div>
+		<script>
+			function lcarsForTheWin () { alert('LCARS for the win!'); }
+			document.attachEventListener(
+				document.getElementById('lcars-button'),
+				'click',
+				lcarsForTheWin);
+		</script>
+
 	</body>
 </html>

@@ -2,7 +2,7 @@
 // Basically, a c-clamp container
 
 // Create a class for the element
-class MyCustomElement extends HTMLElement {
+class AppContainer extends HTMLElement {
     static observedAttributes = ["color", "size"];
   
     constructor() {
@@ -31,5 +31,5 @@ class MyCustomElement extends HTMLElement {
     }
   }
   
-  customElements.define("my-custom-element", MyCustomElement);
+  customElements.define("app-containerr", AppContainer);
   

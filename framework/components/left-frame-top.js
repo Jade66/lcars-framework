@@ -11,11 +11,11 @@ class LeftFrameTop extends HTMLDivElement {
     connectedCallback() {
       self.classList.add('left-frame-top');
 
-      let child = this.subComponentFactory.leftFrameItem('lcars-button', 'LCARS', 1, () => alert('LCARS for the win!'));
-      self.appendChild(child);
+      // let child = this.subComponentFactory.leftFrameItem('lcars-button', 'LCARS', 1, () => alert('LCARS for the win!'));
+      // self.appendChild(child);
 
-      child = this.subComponentFactory.leftFrameItem('dummy-item-1', '21-943330', 2);
-      self.appendChild(child);
+      // child = this.subComponentFactory.leftFrameItem('dummy-item-1', '21-943330', 2);
+      // self.appendChild(child);
 
     }
   
