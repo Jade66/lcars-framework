@@ -21,7 +21,7 @@
 				</div>
 				<div is="right-frame-top" banner-text="TCV Sovereign">
 					<div class="data-cascade-button-group">
-						<div is="data-cascade" max-lines="4" number-of-lines="4" id="header-cascade"></div>
+						<div is="data-cascade" max-lines="4" number-of-lines="4" number-of-columns="5" id="header-cascade"></div>
 						<nav> 
 							<a href="">01</a>
 							<a href="">02</a>
@@ -62,22 +62,17 @@
 						<div class="bar-10"></div>
 					</div>
 					<main>
-						<!-- Start your content here. -->
-
 						<h1>Overall Status</h1>
 						<h2>Life Support <span style="color:aquamarine">Nominal</span> &#149; 
 							Drive/Navigation <span style="color:aquamarine">Nominal</span> &#149; 
 							Shields/Weapons <span style="color:aquamarine">Nominal</span></h2>					
-							<div is="data-cascade" max-lines="8" number-of-lines="4" id="body-cascade"></div>
-
+							<div is="data-cascade" max-lines="8" number-of-lines="4" number-of-columns="10" id="body-cascade"></div>
 						<h3>Section 1</h3>
 						<p>Live long and prosper.</p>
 						<h3>Section 2</h3>
 						<p>Live long and prosper.</p>				
 						<h3>Section 3</h3>
 						<p>Live long and prosper.</p>
-						<!-- End content area. -->
-
 					</main>
 					<footer>
 						<div>
@@ -93,11 +88,9 @@
 		<div class="baseboard"> </div>
 		<script>
 			function lcarsForTheWin () { alert('LCARS for the win!'); }
-			document.attachEventListener(
-				document.getElementById('lcars-button'),
+			document.getElementById('lcars-button').addEventListener(
 				'click',
 				lcarsForTheWin);
 		</script>
-
 	</body>
 </html>

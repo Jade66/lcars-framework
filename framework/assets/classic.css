@@ -1233,6 +1233,7 @@ a:active {
 	overflow: hidden;
 	text-align: right;
 	white-space: nowrap;
+	width: 100px;
 }
 
 @media (max-width: 2080px) {
